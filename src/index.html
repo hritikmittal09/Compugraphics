@@ -1,71 +1,183 @@
-<!doctype html>
-<html  data-theme="">
-
+<!DOCTYPE html>
+<html data-theme="">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compugraphics | Dell Store</title>
+  <link href="./output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="">
-<nav class="navbar bg-black text-white">
-  <div class="navbar-start">
-    <!-- Mobile menu button -->
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-          viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
+<body class="bg-white">
+  <!-- Navbar -->
+  <nav class="navbar bg-black text-white px-4">
+    <div class="navbar-start">
+      <!-- Mobile menu button -->
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </div>
+        <ul tabindex="0"
+          class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black">
+          <li><a>About Us</a></li>
+          <li><a>Services</a></li>
+          <li><a>Contact</a></li>
+        </ul>
       </div>
-      <ul tabindex="0"
-        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black">
+
+      <!-- Brand Name -->
+      <div class="flex items-center space-x-2">
+        <a class="btn btn-ghost normal-case text-xl">Compugraphics</a>
+        <img src="./assets/dell.png" class="w-10 rounded-full" alt="Dell logo">
+      </div>
+    </div>
+
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
         <li><a>About Us</a></li>
         <li><a>Services</a></li>
         <li><a>Contact</a></li>
       </ul>
     </div>
+  </nav>
 
-    <!-- Brand Name -->
-    <div class="flex ">
-      <a class="btn btn-ghost normal-case text-xl">Compugrapics</a>
-      <img src="./assets/dell.png" class="w-10 rounded-full" alt="">
+  <!-- Hero Section -->
+  <div
+    class="hero min-h-[70vh] bg-cover bg-center relative"
+    style="background-image: url('./assets/hero.jpg');"
+  >
+    <div class="hero-overlay bg-opacity-40"></div>
 
+    <div class="hero-content text-center text-neutral-content px-6">
+      <div class="max-w-lg">
+        <h1 class="mb-5 text-5xl font-extrabold text-white drop-shadow-lg">
+          Welcome to <span class=y">Compugraphics</span>
+        </h1>
+        <p class="mb-6 text-lg text-gray-200 leading-relaxed">
+          One Of The Oldest Computer Stores In Agra
+        </p>
+      </div>
     </div>
+  </div>
+
+  <!-- About Section -->
+  <section class="about m-6 py-10 px-8 bg-gray-100 rounded-2xl shadow-md">
+    <h3 class="text-black text-3xl font-semibold mb-4 border-b-2 border-orange-500 inline-block pb-2">
+      About Us
+    </h3>
+    <p class="text-gray-700 leading-relaxed text-lg">
+      One Stop Shop for Computers And Retail Services .Retail For Business requirements 
+     
+    </p>
+  </section>
+
+
+  <section>
     
-  </div>
 
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
-      <li><a>About Us</a></li>
-      <li><a>Services</a></li>
-      <li><a>Contact</a></li>
-    </ul>
-  </div>
-</nav>
-<div
-  class="hero min-h-[70vh] bg-cover bg-center relative"
-  style="background-image: url('./assets/hero.jpg');"
->
-  <div class="hero-overlay "></div>
+<!-- Conveyor Belt Section -->
+<div class="overflow-hidden bg-gray-100 py-6 rounded-xl shadow-md">
+  <div class="inline-flex scroll-animation items-center">
+    
+    <!-- Brand Item -->
+    <div class="mx-6 text-center flex-shrink-0">
+      <img src="./assets/dell.png" 
+           class="w-24 sm:w-28 md:w-32 lg:w-40 h-auto mx-auto object-contain" 
+           alt="Dell" />
+      <p class="mt-2 text-gray-700 text-sm sm:text-base font-medium">Dell</p>
+    </div>
 
-  <div class="hero-content text-center text-neutral-content px-6">
-    <div class="max-w-lg">
-      <h1 class="mb-5 text-5xl font-extrabold text-white drop-shadow-lg">
-        Welcome to <span class="">Compugrapics</span>
-      </h1>
-      <p class="mb-6 text-lg text-gray-200 leading-relaxed">
-        Empowering creativity through design and technology. We deliver innovative digital
-        experiences that bring your vision to life.
-      </p>
-      <button class="btn btn-primary px-8 text-lg">Get Started</button>
+    <div class="mx-6 text-center flex-shrink-0">
+      <img src="./assets/Lenovo.png" 
+           class="w-24 sm:w-28 md:w-32 lg:w-40 h-auto mx-auto object-contain" 
+           alt="Lenovo" />
+      <p class="mt-2 text-gray-700 text-sm sm:text-base font-medium">Lenovo</p>
+    </div>
+
+    <div class="mx-6 text-center flex-shrink-0">
+      <img src="./assets/hp.png" 
+           class="w-24 sm:w-28 md:w-32 lg:w-40 h-auto mx-auto object-contain" 
+           alt="HP" />
+      <p class="mt-2 text-gray-700 text-sm sm:text-base font-medium">HP</p>
+    </div>
+
+    <div class="mx-6 text-center flex-shrink-0">
+      <img src="./assets/ausus.png" 
+           class="w-24 sm:w-28 md:w-32 lg:w-40 h-auto mx-auto object-contain" 
+           alt="Asus" />
+      <p class="mt-2 text-gray-700 text-sm sm:text-base font-medium">Asus</p>
+    </div>
+
+    <div class="mx-6 text-center flex-shrink-0">
+      <img src="./assets/samsumg.png" 
+           class="w-24 sm:w-28 md:w-32 lg:w-40 h-auto mx-auto object-contain" 
+           alt="Samsung" />
+      <p class="mt-2 text-gray-700 text-sm sm:text-base font-medium">Samsung</p>
+    </div>
+
+    <div class="mx-6 text-center flex-shrink-0">
+      <img src="./assets/zebronics.png" 
+           class="w-24 sm:w-28 md:w-32 lg:w-40 h-auto mx-auto object-contain" 
+           alt="Zebronics" />
+      <p class="mt-2 text-gray-700 text-sm sm:text-base font-medium">Zebronics</p>
+    </div>
+
+    <div class="mx-6 text-center flex-shrink-0">
+      <img src="./assets/logtech.jpeg" 
+           class="w-24 sm:w-28 md:w-32 lg:w-40 h-auto mx-auto object-contain" 
+           alt="Logitech" />
+      <p class="mt-2 text-gray-700 text-sm sm:text-base font-medium">Logitech</p>
+    </div>
+
+    <div class="mx-6 text-center flex-shrink-0">
+      <img src="./assets/vgard.png" 
+           class="w-24 sm:w-28 md:w-32 lg:w-40 h-auto mx-auto object-contain" 
+           alt="V-Guard" />
+      <p class="mt-2 text-gray-700 text-sm sm:text-base font-medium">V-Guard</p>
+    </div>
+
+    <div class="mx-6 text-center flex-shrink-0">
+      <img src="./assets/boat.png" 
+           class="w-24 sm:w-28 md:w-32 lg:w-40 h-auto mx-auto object-contain" 
+           alt="Boat" />
+      <p class="mt-2 text-gray-700 text-sm sm:text-base font-medium">Boat</p>
+    </div>
+
+    <div class="mx-6 text-center flex-shrink-0">
+      <img src="./assets/hyperrx.png" 
+           class="w-24 sm:w-28 md:w-32 lg:w-40 h-auto mx-auto object-contain" 
+           alt="HyperX" />
+      <p class="mt-2 text-gray-700 text-sm sm:text-base font-medium">HyperX</p>
+    </div>
+
+    <div class="mx-6 text-center flex-shrink-0">
+      <img src="./assets/cyberpower.png" 
+           class="w-24 sm:w-28 md:w-32 lg:w-40 h-auto mx-auto object-contain" 
+           alt="CyberPower" />
+      <p class="mt-2 text-gray-700 text-sm sm:text-base font-medium">CyberPower</p>
+    </div>
+
+    <div class="mx-6 text-center flex-shrink-0">
+      <img src="./assets/epson.png" 
+           class="w-24 sm:w-28 md:w-32 lg:w-40 h-auto mx-auto object-contain" 
+           alt="Epson" />
+      <p class="mt-2 text-gray-700 text-sm sm:text-base font-medium">Epson</p>
+    </div>
+
+    <div class="mx-6 text-center flex-shrink-0">
+      <img src="./assets/luminous.png" 
+           class="w-24 sm:w-28 md:w-32 lg:w-40 h-auto mx-auto object-contain" 
+           alt="Luminous" />
+      <p class="mt-2 text-gray-700 text-sm sm:text-base font-medium">Luminous</p>
     </div>
   </div>
 </div>
 
-
-
+  </section>
 </body>
-
 </html>
+

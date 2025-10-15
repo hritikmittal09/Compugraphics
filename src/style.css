@@ -1,0 +1,39 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scroll-animation {
+  animation: scroll 35s linear infinite;
+}
+
+.scroll-animation:hover {
+  animation-play-state: paused; /* pause on hover */
+}
+
+@media (max-width: 768px) {
+  .scroll-animation {
+    animation-duration: 5s; /* slower scroll for small screens */
+  }
+}
+
+.scroll-animation {
+  animation: scroll 3s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .scroll-animation {
+    animation-duration: 12s; /* slower on mobile */
+  }
+}
